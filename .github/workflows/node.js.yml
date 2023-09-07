@@ -19,9 +19,6 @@ jobs:
         with:
           node-version: "16.x"
           cache: npm
-      - run: node --version
-        env:
-          NODE_OPTIONS: "--openssl-legacy-provider"
       - name: npm install and build webpack
         run: |
           npm install
